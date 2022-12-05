@@ -2,7 +2,7 @@ services:
 - type: web
   name: retool
   env: docker
-  plan: standard
+  plan: free
   healthCheckPath: /api/checkHealth
   autoDeploy: false
   envVars:
@@ -43,3 +43,4 @@ databases:
 - name: retool
   databaseName: retooldb
   user: retool_user
+  plan: free
