@@ -38,6 +38,11 @@ services:
     value: true
   - key: LICENSE_KEY
     value: EXPIRED-LICENSE-KEY-TRIAL
+  - key: MONGO_DB_URL
+    fromService:
+      type: pserv
+      name: mongodb
+      property: hostport
 
 databases:
 - name: retool
